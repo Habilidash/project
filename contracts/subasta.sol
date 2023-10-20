@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+// SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity 0.8.19;
 
 import {IHabilidashTkn} from "../interface/IHTKN.sol"; 
@@ -36,7 +36,7 @@ contract Subasta {
     mapping(bytes32 => uint256) listaSubastasMapping;
     mapping(bytes32 => mapping(address => uint256)) public ofertasGuardadas;
     
-    
+
     uint256 contador; // 0
     function creaSubasta() public {
         startTime = block.timestamp;
